@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap");
+
+:root {
+  --cream: #FAF6F0;
+  --warm-brown: #8B6F47;
+  --dark-brown: #5C4033;
+  --soft-green: #7A9E7E;
+  --deep-green: #4A6B4F;
+  --terracotta: #C67B5C;
+  --light-sand: #F0E6D4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ===== テクスチャ背景 ===== */
+.texture-bg {
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(122, 158, 126, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(198, 123, 92, 0.06) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='60' height='60' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* ===== アニメーション ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* ===== 和のデコレーション ===== */
+.dotted-border {
+  border-image: repeating-linear-gradient(
+    90deg,
+    var(--warm-brown) 0px,
+    var(--warm-brown) 4px,
+    transparent 4px,
+    transparent 10px
+  ) 1;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--terracotta), var(--warm-brown));
+  margin: 0 auto;
+}
+
+/* ===== ホバーエフェクト ===== */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(92, 64, 51, 0.12);
+}
+
+/* ===== セレクション ===== */
+::selection {
+  background-color: rgba(122, 158, 126, 0.3);
+  color: var(--dark-brown);
+}
