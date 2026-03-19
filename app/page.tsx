@@ -91,7 +91,7 @@ export default function Home() {
             学生だからこそ、できること
           </h2>
           <p className="font-sans text-base md:text-lg text-warmBrown leading-loose">
-            「コレ買い！」は、東京農工大学から生まれた学生プロジェクトです。
+            「コレ買い！」は、慶應義塾大学から生まれた学生プロジェクトです。
             <br />
             地域の魅力ある商品には、まだ伝えきれていない価値がたくさんあります。
             <br />

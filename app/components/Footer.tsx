@@ -47,6 +47,14 @@ export default function Footer() {
                   お問い合わせ
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/aprico"
+                  className="hover:text-terracotta transition-colors"
+                >
+                  工房アプリコ
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -56,7 +64,7 @@ export default function Footer() {
               プロジェクト情報
             </h4>
             <p className="text-sm text-cream/60 leading-relaxed">
-              東京農工大学発 学生プロジェクト
+              慶應義塾大学発 学生プロジェクト
               <br />
               地域産品の販売・コンサルティング
             </p>
