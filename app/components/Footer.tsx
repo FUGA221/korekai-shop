@@ -36,7 +36,7 @@ export default function Footer() {
                   href="/products"
                   className="hover:text-terracotta transition-colors"
                 >
-                  商品一覧
+                  工房アプリコ
                 </Link>
               </li>
               <li>
@@ -45,14 +45,6 @@ export default function Footer() {
                   className="hover:text-terracotta transition-colors"
                 >
                   お問い合わせ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/aprico"
-                  className="hover:text-terracotta transition-colors"
-                >
-                  工房アプリコ
                 </Link>
               </li>
             </ul>
