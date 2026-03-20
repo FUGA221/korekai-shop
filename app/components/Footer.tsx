@@ -5,17 +5,14 @@ export default function Footer() {
     <footer className="bg-darkBrown text-cream/80">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* ブランド + SNS */}
+          {/* 繝悶Λ繝ｳ繝・+ SNS */}
           <div>
             <h3 className="font-serif text-xl font-bold text-cream mb-3">
-              コレ買い！
-            </h3>
+              繧ｳ繝ｬ雋ｷ縺・ｼ・            </h3>
             <p className="text-sm leading-relaxed text-cream/60 mb-4">
-              地域に眠る「いいもの」を発掘し、
-              <br />
-              その価値を届ける学生発プロジェクト。
-            </p>
-            {/* SNS アイコン */}
+              蝨ｰ蝓溘↓逵繧九後＞縺・ｂ縺ｮ縲阪ｒ逋ｺ謗倥＠縲・              <br />
+              縺昴・萓｡蛟､繧貞ｱ翫￠繧句ｭｦ逕溽匱繝励Ο繧ｸ繧ｧ繧ｯ繝医・            </p>
+            {/* SNS 繧｢繧､繧ｳ繝ｳ */}
             <div className="flex gap-3">
               
                 href="https://instagram.com/"
@@ -33,10 +30,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ナビゲーション */}
+          {/* 繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ */}
           <div>
             <h4 className="font-sans font-semibold text-cream mb-3 text-sm tracking-wider">
-              ページ
+              繝壹・繧ｸ
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -44,15 +41,14 @@ export default function Footer() {
                   href="/"
                   className="hover:text-terracotta transition-colors"
                 >
-                  トップ
-                </Link>
+                  繝医ャ繝・                </Link>
               </li>
               <li>
                 <Link
                   href="/products"
                   className="hover:text-terracotta transition-colors"
                 >
-                  工房アプリコ
+                  蟾･謌ｿ繧｢繝励Μ繧ｳ
                 </Link>
               </li>
               <li>
@@ -60,35 +56,33 @@ export default function Footer() {
                   href="/activity"
                   className="hover:text-terracotta transition-colors"
                 >
-                  活動報告
-                </Link>
+                  豢ｻ蜍募ｱ蜻・                </Link>
               </li>
               <li>
                 <Link
                   href="/contact"
                   className="hover:text-terracotta transition-colors"
                 >
-                  お問い合わせ
+                  縺雁撫縺・粋繧上○
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* プロジェクト情報 */}
+          {/* 繝励Ο繧ｸ繧ｧ繧ｯ繝域ュ蝣ｱ */}
           <div>
             <h4 className="font-sans font-semibold text-cream mb-3 text-sm tracking-wider">
-              プロジェクト情報
+              繝励Ο繧ｸ繧ｧ繧ｯ繝域ュ蝣ｱ
             </h4>
             <p className="text-sm text-cream/60 leading-relaxed">
-              慶應義塾大学発 学生プロジェクト
-              <br />
-              地域産品の販売・コンサルティング
+              諷ｶ諛臥ｾｩ蝪ｾ螟ｧ蟄ｦ逋ｺ 蟄ｦ逕溘・繝ｭ繧ｸ繧ｧ繧ｯ繝・              <br />
+              蝨ｰ蝓溽肇蜩√・雋ｩ螢ｲ繝ｻ繧ｳ繝ｳ繧ｵ繝ｫ繝・ぅ繝ｳ繧ｰ
             </p>
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-cream/10 text-center text-xs text-cream/40">
-          &copy; {new Date().getFullYear()} コレ買い！ All rights reserved.
+          &copy; {new Date().getFullYear()} 繧ｳ繝ｬ雋ｷ縺・ｼ・All rights reserved.
         </div>
       </div>
     </footer>
