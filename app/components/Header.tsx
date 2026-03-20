@@ -23,6 +23,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8">
           <NavLink href="/">トップ</NavLink>
           <NavLink href="/products">工房アプリコ</NavLink>
+          <NavLink href="/activity">活動報告</NavLink>
           <NavLink href="/contact">お問い合わせ</NavLink>
         </nav>
 
@@ -53,6 +54,9 @@ export default function Header() {
             </MobileNavLink>
             <MobileNavLink href="/products" onClick={() => setIsOpen(false)}>
               工房アプリコ
+            </MobileNavLink>
+            <MobileNavLink href="/activity" onClick={() => setIsOpen(false)}>
+              活動報告
             </MobileNavLink>
             <MobileNavLink href="/contact" onClick={() => setIsOpen(false)}>
               お問い合わせ
